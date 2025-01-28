@@ -21,7 +21,8 @@ body {
 	padding: 20px;
 	margin: 0 auto;
 	font-family: serif;
-	color: var(--text-color)
+	color: var(--text-color);
+	font-family: "Atkinson Hyperlegible", sans-serif;
 }
 
 a {
