@@ -1,16 +1,16 @@
 {{ define "main" }}
 <div class="posts h-feed">
     <div class="post_list" role="main">
+        <h3>Latest Posts</h3>
+        <ul>
         {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") }}
         {{ range .Paginator.Pages }}
-        <div class="post-preview h-entry {{ range .Params.categories }} {{ . | urlize | lower }}{{ end }}">
-            <div class="post-date-wrapper">
-            <a href="{{ .Permalink }}" class="post-date u-url">
+        <li class="post-preview h-entry {{ range .Params.categories }} {{ . | urlize | lower }}{{ end }}">
+            <span class="post-date-wrapper">
                 <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">
                     {{ partial "dateformat/long" . }}
                 </time>
-            </a>
-            </div>
+            </span>
             {{ if .Title }}
                 <h2 class="post-title p-name"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
             {{ else }}
@@ -18,9 +18,10 @@
                     {{ .Content }}
                 </div>
             {{ end }}
-        </div>
-        <hr class="article-break">
+        </li>
         {{ end }}
+        </ul>
+        <p>See All Posts</p>
     </div>
 </div>
 <div class="post-nav">
