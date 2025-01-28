@@ -13,26 +13,6 @@
             </div>
             {{ if .Title }}
                 <h2 class="post-title p-name"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-                    {{ if in .RawContent "<!--more-->" }}
-                        <div class="p-summary">
-                            {{ $splitContents := split .RawContent "<!--more-->" }}
-                            {{ $summary := index $splitContents 0 }}
-                            {{ $summary := replaceRE "\\[\\^.*?\\]" "" $summary }}
-                            {{ $summary := replaceRE "\\n\\[\\^.*?\\]:.*" "" $summary }}
-                            <p>{{ $summary | markdownify }}</p>
-                            <p><a class="read-more" href="{{ .Permalink }}"><button>
-                                {{ if templates.Exists "partials/microhook-read-more-text.html" }}
-                                {{ partial "microhook-read-more-text.html" . }}
-                                {{ else }}
-                                {{ T "Read more" }} →
-                                {{ end }}
-                            </button></a></p>
-                        </div>
-                    {{ else }}
-                        <div class="e-content with-title">
-                            {{ .Content }}
-                        </div>
-                    {{ end }}
             {{ else }}
                 <div class="e-content without-title">
                     {{ .Content }}
