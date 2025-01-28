@@ -10,6 +10,10 @@ html {
 	background: var(--background);
 }
 
+header a {
+	border: none;
+}
+
 body {
 	max-width: 700px;
 	padding: 20px;
