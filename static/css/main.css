@@ -71,3 +71,7 @@ nav a:hover {
 .post_list ul li span.post-date-wrapper {
 	float: right;
 }
+
+.post_list ul li p {
+	display: inline;
+}
