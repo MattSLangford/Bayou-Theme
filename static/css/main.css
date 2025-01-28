@@ -63,5 +63,5 @@ nav a:hover {
 .post_list ul li {
 	padding: 0;
 	margin: 0;
-	border-bottom: 1px dotted var(--primary);
+	border-bottom: 1px solid var(--primary);
 }
