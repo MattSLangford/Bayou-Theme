@@ -75,3 +75,8 @@ nav a:hover {
 .post_list ul li p {
 	display: inline;
 }
+
+.post_list ul li a {
+	text-decoration: none;
+	border: none;
+}
