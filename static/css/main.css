@@ -54,3 +54,14 @@ nav a {
 nav a:hover {
 	background: var(--secondary);
 }
+
+.post_list ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.post_list ul li {
+	padding: 0;
+	margin: 0;
+	border-bottom: 1px dotted var(--primary);
+}
