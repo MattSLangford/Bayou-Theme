@@ -8,32 +8,32 @@
 
 @font-face {
 	font-family: 'Atkinson Hyperlegible';
-	src: url('static/fonts/Atkinson-Hyperlegible-Regular-102a.woff2') format('woff2'),
-		 url('static/fonts/Atkinson-Hyperlegible-Regular-102.woff') format('woff');
+	src: url('fonts/Atkinson-Hyperlegible-Regular-102a.woff2') format('woff2'),
+		 url('fonts/Atkinson-Hyperlegible-Regular-102.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Atkinson Hyperlegible';
-	src: url('static/fonts/Atkinson-Hyperlegible-Italic-102a.woff2') format('woff2'),
-		 url('static/fonts/Atkinson-Hyperlegible-Italic-102.woff') format('woff');
+	src: url('fonts/Atkinson-Hyperlegible-Italic-102a.woff2') format('woff2'),
+		 url('fonts/Atkinson-Hyperlegible-Italic-102.woff') format('woff');
 	font-weight: normal;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'Atkinson Hyperlegible';
-	src: url('static/fonts/Atkinson-Hyperlegible-Bold-102a.woff2') format('woff2'),
-		 url('static/fonts/Atkinson-Hyperlegible-Bold-102.woff') format('woff');
+	src: url('fonts/Atkinson-Hyperlegible-Bold-102a.woff2') format('woff2'),
+		 url('fonts/Atkinson-Hyperlegible-Bold-102.woff') format('woff');
 	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Atkinson Hyperlegible';
-	src: url('static/fonts/Atkinson-Hyperlegible-BoldItalic-102a.woff2') format('woff2'),
-		 url('static/fonts/Atkinson-Hyperlegible-BoldItalic-102.woff') format('woff');
+	src: url('fonts/Atkinson-Hyperlegible-BoldItalic-102a.woff2') format('woff2'),
+		 url('fonts/Atkinson-Hyperlegible-BoldItalic-102.woff') format('woff');
 	font-weight: bold;
 	font-style: italic;
 }
