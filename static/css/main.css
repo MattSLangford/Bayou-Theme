@@ -64,4 +64,9 @@ nav a:hover {
 	padding: 0;
 	margin: 0;
 	border-bottom: 1px solid var(--primary);
+	overflow: hidden;
+}
+
+.post_list ul li span.post-date-wrapper {
+	float: right;
 }
