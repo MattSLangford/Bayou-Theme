@@ -12,7 +12,7 @@
                 </time>
             </span>
             {{ if .Title }}
-                <h2 class="post-title p-name"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                <a href="{{ .Permalink }}">{{ .Title }}</a></h2>
             {{ else }}
                 <div class="e-content without-title">
                     {{ .Content }}
