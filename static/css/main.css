@@ -1,12 +1,26 @@
+:root {
+	--background: #FFF;
+	--primary: #496679;
+	--secondary: lightgray;
+	--accent: lightblue;
+	--text-color: #666;
+}
+
+html {
+	background: var(--background);
+}
+
 body {
 	max-width: 700px;
 	padding: 20px;
 	margin: 0 auto;
 	font-family: serif;
+	color: var(--text-color)
 }
 
 nav ul {
 	list-style-type: none;
+	padding: 0;
 }
 
 nav ul li {
@@ -17,9 +31,12 @@ nav ul li {
 
 nav a {
 	padding: 5px 10px;
-	border: 1px solid;
+	border: 1px solid var(--primary);
+	border-radius: 5px;
+	text-decoration: none;
+	color: var(--primary)
 }
 
 nav a:hover {
-	background: gray;
+	background: var(--accent);
 }
