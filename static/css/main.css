@@ -18,6 +18,12 @@ body {
 	color: var(--text-color)
 }
 
+a {
+	color: var(--primary);
+	text-decoration: none;
+	border-bottom: 1px solid var(--primary);
+}
+
 nav ul {
 	list-style-type: none;
 	padding: 0;
@@ -38,5 +44,5 @@ nav a {
 }
 
 nav a:hover {
-	background: var(--accent);
+	background: var(--secondary);
 }
