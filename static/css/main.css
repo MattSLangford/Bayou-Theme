@@ -65,6 +65,7 @@ nav a:hover {
 	margin: 0;
 	border-bottom: 1px solid var(--primary);
 	overflow: hidden;
+	padding: 20px 0;
 }
 
 .post_list ul li span.post-date-wrapper {
