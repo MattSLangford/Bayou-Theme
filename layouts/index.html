@@ -14,9 +14,7 @@
             {{ if .Title }}
                 <a href="{{ .Permalink }}">{{ .Title }}</a></h2>
             {{ else }}
-                <div class="e-content without-title">
-                    {{ .Content }}
-                </div>
+                {{ .Content }}
             {{ end }}
         </li>
         {{ end }}
