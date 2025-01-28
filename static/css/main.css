@@ -6,7 +6,37 @@
 	--text-color: #666;
 }
 
-@import url("https://fonts.bunny.net/css?family=atkinson-hyperlegible:400,400i,700,700i|inter:400,700,900");
+@font-face {
+	font-family: 'Atkinson Hyperlegible';
+	src: url('fonts/Atkinson-Hyperlegible-Regular-102a.woff2') format('woff2'),
+		 url('fonts/Atkinson-Hyperlegible-Regular-102.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Atkinson Hyperlegible';
+	src: url('fonts/Atkinson-Hyperlegible-Italic-102a.woff2') format('woff2'),
+		 url('fonts/Atkinson-Hyperlegible-Italic-102.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Atkinson Hyperlegible';
+	src: url('fonts/Atkinson-Hyperlegible-Bold-102a.woff2') format('woff2'),
+		 url('fonts/Atkinson-Hyperlegible-Bold-102.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Atkinson Hyperlegible';
+	src: url('fonts/Atkinson-Hyperlegible-BoldItalic-102a.woff2') format('woff2'),
+		 url('fonts/Atkinson-Hyperlegible-BoldItalic-102.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}
 
 html {
 	background: var(--background);
@@ -22,7 +52,7 @@ body {
 	margin: 0 auto;
 	font-family: serif;
 	color: var(--text-color);
-	font-family: "Atkinson Hyperlegible", sans-serif;
+	font-family: 'Atkinson Hyperlegible', sans-serif;
 }
 
 a {
