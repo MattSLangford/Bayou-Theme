@@ -1,0 +1,48 @@
+{{ define "main" }}
+<div class="home h-feed">
+
+	<h2 class="replies-title">{{ T "Recent replies" }}</h2>
+	<div class="post-list">
+		{{ if .Site.Params.paginate_replies }}
+		{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "reply") }}
+		{{ $list := $paginator.Pages }}
+		{{ range $list  }}
+		<div class="h-entry">
+			{{ if .Title }}
+			<h1 class="p-name post-title"><a class="post-title" href="{{ .Permalink }}">{{ .Title }}</a></h1>
+				{{ end }}
+
+				<a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ partial "dateformat/short" . }}</time> ∞</a>
+
+				{{ if .Params.reply_to_url }}
+				<div class="reply-to"> {{ T "Replying to" }}: {{ if eq .Params.reply_to_hostname "micro.blog" }} <a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">@{{ .Params.reply_to_username }}</a> {{ else }} <a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">{{ .Params.reply_to_hostname }}</a> {{ end }} </div> {{ end }}
+
+				<div class="e-content">
+					{{ .Content }}
+				</div>
+		</div>
+		{{ end }}
+		{{ else }}
+		{{ $list := first 25 (where .Data.Pages.ByDate.Reverse "Type" "reply") }}
+		{{ range $list  }}
+		<div class="h-entry">
+			{{ if .Title }}
+			<h2 class="p-name"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+			{{ end }}
+			<div class="post-date-wrapper">
+				<time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ partial "dateformat/short" . }}</time>
+			</div>
+			{{ if .Params.reply_to_url }}
+			<div class="reply-to">{{ if eq .Params.reply_to_hostname "micro.blog" }} <a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">{{ T "Replying to post by" }} @{{ .Params.reply_to_username }}</a> {{ else }} <a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">{{ .Params.reply_to_hostname }}</a> {{ end }} </div> {{ end }}
+
+			<div class="e-content">
+				{{ .Content }}
+			</div>
+		</div>
+		<hr class="article-break">
+		{{ end }}
+		{{ end }}
+	</div>
+
+</div>
+{{ end }}
