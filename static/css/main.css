@@ -178,6 +178,13 @@ pre {
 	overflow: scroll;
 }
 
+code {
+	background-color: var(--accent);
+	padding: 2px;
+	border-radius: 4px;
+	border: 1px solid var(--primary);
+}
+
 footer.site-footer {
 	margin-top: 120px;
 	text-align: center;
