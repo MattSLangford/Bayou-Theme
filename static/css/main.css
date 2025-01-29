@@ -133,6 +133,15 @@ h1, h2 {
 	font-size: 1.8em;
 }
 
+time {
+	font-size: 0.8em;
+}
+
+.micropost time {
+	display: block;
+	text-align: right;
+}
+
 img {
 	max-width: 100%;
 	border-radius: 10px;
