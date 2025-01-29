@@ -15,7 +15,7 @@
 	<div class="full-archives h-feed">
 		<h3>{{ T "Full post list" }}</h3>
 		<ul>
-		{{ $list := (where .Site.Pages "Type" "post") }}
+		{{ $list := (where .Site.RegularPages.ByDate.Reverse "Params.categories" "intersect" (slice "Longform")) }}
 		{{ range $list }}
 
 		<li class="post-preview h-entry {{ range .Params.categories }} {{ . | urlize | lower }}{{ end }}">
