@@ -15,6 +15,10 @@ html {
 	-webkit-font-smoothing: antialiased;
 }
 
+header {
+	margin: 20px 0;
+}
+
 header img.profile_photo {
 	border-radius: 20px;
 	width: 60px;
