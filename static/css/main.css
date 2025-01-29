@@ -121,6 +121,7 @@ nav a:hover {
 .post_list ul li a {
 	text-decoration: none;
 	border: none;
+	text-overflow: ellipsis;
 }
 
 h1, h2, h3, h4, h5, h6 {
