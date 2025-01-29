@@ -294,7 +294,11 @@ input[type="reset"] {
   border: 1px solid var(--primary);
   border-radius: 20px;
   text-decoration: none;
-  color: var(--primary)
+  color: var(--primary);
+  background-color: var(--white);
+  font-size: 0.8em;
+  font-weight: 600;
+  font-family: var(--font-secondary);
 }
 
 button:hover,
