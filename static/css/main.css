@@ -127,12 +127,12 @@ h1, h2 {
 
 img {
 	max-width: 100%;
-	border-radius: 20px;
+	border-radius: 10px;
 }
 
 blockquote, pre {
 	background: var(--accent);
-	padding: 10px;
+	padding: 10px 20px;
 	border: 1px solid var(--primary);
-	border-radius: 20px;
+	border-radius: 10px;
 }
