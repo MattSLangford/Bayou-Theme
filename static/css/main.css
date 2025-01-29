@@ -3,7 +3,7 @@
 :root {
 	--background: #FFF;
 	--primary: #1E6FBA;
-	--secondary: lightgray;
+	--secondary: #fafafa;
 	--accent: #D6E9F8;
 	--text-color: #000;
 	--black: #000;
@@ -201,12 +201,11 @@ footer.site-footer {
 /* MICROBLOG CONVERSATION */
 
 .microblog_conversation {
-	background: var(--accent);
 	padding-top: 20px;
 }
 
 .microblog_post {
-	border: 1px solid var(--primary);
+	border: 1px solid var(--secondary);
 	padding: 20px;
 	border-radius: 20px;
 	margin-bottom: 20px;
@@ -215,7 +214,7 @@ footer.site-footer {
 .microblog_conversation img.microblog_avatar {
 	display: initial;
 	padding: 2px;
-	border: 1px solid var(--primary);
+	border: 1px solid var(--secondary);
 	border-radius: 100%;
 	max-width: 40px !important;
 	width: 40px;
@@ -245,7 +244,7 @@ p.microblog_reply_signin {
 }
 
 .microblog_reply_textarea textarea {
-	border: 1px solid var(--primary);
+	border: 1px solid var(--secondary);
 	border-radius: 20px;
 	padding: 20px;
 	width: calc(100% - 40px);
@@ -253,8 +252,7 @@ p.microblog_reply_signin {
 }
 
 form.microblog_reply_form {
-	background-color: var(--accent);
-	border: 1px solid var(--primary);
+	background-color: var(--secondary);
 	padding: 10px 20px;
 	border-radius: 20px;
 
