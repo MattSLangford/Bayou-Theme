@@ -149,6 +149,12 @@ h1, h2 {
 	font-size: 0.8em;
 }
 
+.post time, .page time {
+	font-size: 0.8em;
+	margin-top: -20px;
+	display: block;
+}
+
 img {
 	max-width: 100%;
 	border-radius: 10px;
