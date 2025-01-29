@@ -34,8 +34,11 @@
 </head>
 <body>
   <header class="site-header">
+    <div class="site-title">
     <a href="/"><img src="{{ .Site.Author.avatar }}" alt="{{ .Site.Title }} Profile Photo" class="profile_photo u-photo" width="80" height="80"></a>
     <h1><a class="site-title p-name u-url" href="/">{{ .Site.Title }}</a></h1>
+    </div>
+
     <nav class="site-nav">
       <ul>
         {{ range .Site.Menus.main }}
