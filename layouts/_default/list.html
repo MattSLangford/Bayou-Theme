@@ -5,11 +5,11 @@
       {{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") }}
       {{ range .Paginator.Pages }}
       <div class="post-preview h-entry {{ range .Params.categories }} {{ . | urlize | lower }}{{ end }}">
-          <div class="post-date-wrapper">
-          <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ partial "dateformat/short" . }}</time></a>
-          </div>
           {{ if .Title }}
               <h2 class="post-title p-name"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+              <div class="post-date-wrapper">
+              <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ partial "dateformat/short" . }}</time></a>
+              </div>
                   {{ if in .RawContent "<!--more-->" }}
                       <div class="p-summary">
                           {{ $splitContents := split .RawContent "<!--more-->" }}
@@ -22,6 +22,9 @@
                           </button></a></p>
                       </div>
                   {{ else }}
+                  <div class="post-date-wrapper">
+                  <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ partial "dateformat/short" . }}</time></a>
+                  </div>
                       <div class="e-content with-title">
                           {{ .Content }}
                       </div>
