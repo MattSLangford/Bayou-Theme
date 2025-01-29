@@ -18,13 +18,13 @@
 		{{ $list := (where .Site.Pages "Type" "post") }}
 		{{ range $list }}
 
-		<li class="h-entry">
-			<a href="{{ .Permalink }}" class="u-url"><span class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05-0700" }}">{{ partial "dateformat/short" . }}</span></a>
-			{{ if .Title }}
-			{{ .Title }}
-			{{ else }}
-			<span class="p-summary">{{ .Content | plainify | htmlUnescape | truncate 150 }}</span>
-			{{ end }}
+		<li class="post-preview h-entry {{ range .Params.categories }} {{ . | urlize | lower }}{{ end }}">
+			<span class="post-date-wrapper">
+				<time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">
+					{{ partial "dateformat/short" . }}
+				</time>
+			</span>
+			<a href="{{ .Permalink }}">{{ .Title }}</a>
 		</li>
 
 		{{ end }}
