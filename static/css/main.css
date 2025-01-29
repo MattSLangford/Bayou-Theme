@@ -13,6 +13,13 @@
 	--font-secondary: 'Inter';
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 html {
 	background: var(--background);
 	-webkit-font-smoothing: antialiased;
