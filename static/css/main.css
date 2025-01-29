@@ -216,6 +216,41 @@ footer.site-footer {
 	font-size: 0.8em;
 }
 
+.full-archives ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.full-archives ul li {
+	padding: 0;
+	margin: 0;
+	border-bottom: 1px solid var(--primary);
+	overflow: hidden;
+	padding: 20px 0;
+}
+
+.full-archives ul li:first-of-type {
+	border-top: 1px solid var(--primary);
+}
+
+.full-archives ul li span.post-date-wrapper {
+	float: right;
+}
+
+.full-archives ul li p {
+	display: inline;
+}
+
+.full-archives ul li a {
+	text-decoration: none;
+	border: none;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	max-width: calc(100% - 120px);
+	float: left;
+}
+
 /* CATEGORIES */
 
 ul.post-tags {
