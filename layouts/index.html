@@ -21,7 +21,7 @@
         {{ end }}
         </div>
         <div class="latest-posts">
-        <h4>Fresh Off the Press</h4>
+        <h4>{{ T "Fresh off the press" }}</h4>
         <ul>
         {{ $paginator := .Paginate (where .Site.RegularPages.ByDate.Reverse "Params.categories" "intersect" (slice "Longform")) }}
         {{ range $paginator.Pages }}
