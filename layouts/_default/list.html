@@ -22,14 +22,14 @@
                           </button></a></p>
                       </div>
                   {{ else }}
-                  <div class="post-date-wrapper">
-                  <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ partial "dateformat/short" . }}</time></a>
-                  </div>
                       <div class="e-content with-title">
                           {{ .Content }}
                       </div>
                   {{ end }}
           {{ else }}
+          <div class="post-date-wrapper">
+          <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ partial "dateformat/short" . }}</time></a>
+          </div>
               <div class="e-content without-title">
                   {{ .Content }}
               </div>
