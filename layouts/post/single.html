@@ -2,11 +2,11 @@
 <div class="post h-entry {{ range .Params.categories }} {{ . | urlize | lower }}{{ end }}">
   <header class="post-header">
     <div class="post-date-wrapper">
-    <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ partial "dateformat/long" . }}</time>
     </div>
     {{ if .Title }}
     <h2 class="p-name post-title">{{ .Title }}</h2>
     {{ end }}
+    <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ partial "dateformat/short" . }}</time>
   </header>
   <article class="post-content e-content {{ if .Title }}with-title{{ else }}without-title{{ end }}">
     {{ .Content }}

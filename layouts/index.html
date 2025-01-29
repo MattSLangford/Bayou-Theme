@@ -7,7 +7,7 @@
                     {{ .Content }}
                     <span class="post-date-wrapper">
                         <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">
-                            {{ partial "dateformat/long" . }}
+                            {{ partial "dateformat/short" . }}
                         </time>
                     </span>
                 </div>
@@ -21,7 +21,7 @@
         <li class="post-preview h-entry {{ range .Params.categories }} {{ . | urlize | lower }}{{ end }}">
             <span class="post-date-wrapper">
                 <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">
-                    {{ partial "dateformat/long" . }}
+                    {{ partial "dateformat/short" . }}
                 </time>
             </span>
             <a href="{{ .Permalink }}">{{ .Title }}</a>
