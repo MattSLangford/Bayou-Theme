@@ -1,6 +1,7 @@
 {{ define "main" }}
 <div class="posts h-feed">
     <div class="post_list" role="main">
+        <div class="single-post">
         {{ range first 1 (where .Site.RegularPages.ByDate.Reverse "Params.categories" "intersect" (slice "Microposts")) }}
             <div class="post-preview h-entry micropost">
                 <div class="e-content">
@@ -13,7 +14,8 @@
                 </div>
             </div>
         {{ end }}
-
+        </div>
+        <div class="latest-posts">
         <h4>Latest Posts</h4>
         <ul>
         {{ $paginator := .Paginate (where .Site.RegularPages.ByDate.Reverse "Params.categories" "intersect" (slice "Longform")) }}
@@ -28,6 +30,7 @@
         </li>
         {{ end }}
         </ul>
+        </div>
     </div>
 </div>
 
