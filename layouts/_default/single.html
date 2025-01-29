@@ -2,6 +2,8 @@
 <div class="page">
   {{ if .Title }}
   <h2 class="p-name post-title">{{ .Title }}</h2>
+  {{ else }}
+  <h2 class="p-name post-title">Quick Update</h2>
   {{ end }}
   {{ if .Params.reply_to_url }} <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ partial "dateformat/short" . }}</time> ∞</a>
   <div class="reply-to"> {{ T "Replying to" }}: {{ if eq .Params.reply_to_hostname "micro.blog" }} <a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">@{{ .Params.reply_to_username }}</a> {{ else }} <a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">{{ .Params.reply_to_hostname }}</a> {{ end }} </div> {{ end }}
