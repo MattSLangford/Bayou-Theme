@@ -2,9 +2,22 @@
 <div class="posts h-feed">
     <div class="post_list" role="main">
         <h3>Latest Update</h3>
+        {{ with (first 1 (where .Site.Pages.ByDate.Reverse "Type" "post" "Params.categories" "Microposts")) }}
+            <div class="post-preview h-entry">
+                <span class="post-date-wrapper">
+                    <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">
+                        {{ partial "dateformat/long" . }}
+                    </time>
+                </span>
+                <div class="e-content">
+                    {{ .Content }}
+                </div>
+            </div>
+        {{ end }}
+
         <h3>Latest Posts</h3>
         <ul>
-        {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") }}
+        {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post" "Params.categories" "Longform") }}
         {{ range .Paginator.Pages }}
         <li class="post-preview h-entry {{ range .Params.categories }} {{ . | urlize | lower }}{{ end }}">
             <span class="post-date-wrapper">
@@ -12,11 +25,7 @@
                     {{ partial "dateformat/long" . }}
                 </time>
             </span>
-            {{ if .Title }}
-                <a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-            {{ else }}
-                {{ .Content }}
-            {{ end }}
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
         </li>
         {{ end }}
         </ul>
