@@ -197,3 +197,65 @@ footer.site-footer {
 	text-align: center;
 	font-size: 0.8em;
 }
+
+/* MICROBLOG CONVERSATION */
+
+.microblog_conversation {
+	background: var(--conversation-background);
+	padding-top: 20px;
+}
+
+.microblog_post {
+	border: 1px solid var(--comment-border);
+	padding: 20px;
+	border-radius: 20px;
+	margin-bottom: 20px;
+}
+
+.microblog_conversation img.microblog_avatar {
+	display: initial;
+	padding: 2px;
+	border: 1px solid var(--profile-border);
+	border-radius: 100%;
+	max-width: 40px !important;
+	width: 40px;
+	vertical-align: middle;
+	margin-bottom: 0;
+}
+
+.microblog_user {
+	font-weight: 700;
+}
+
+.microblog_text p {
+	padding: 0;
+}
+
+p.microblog_reply_textarea, p.microblog_reply_button, p.microblog_reply_signin {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+p.microblog_reply_signin {
+	font-weight: 700;
+}
+
+.microblog_time {
+	font-size: 0.8em;
+}
+
+.microblog_reply_textarea textarea {
+	border: 1px solid var(--comment-border);
+	border-radius: 20px;
+	padding: 20px;
+	width: calc(100% - 40px);
+	resize: none;
+}
+
+form.microblog_reply_form {
+	background-color: var(--comment-form-background-color);
+	border: 1px solid var(--comment-form-border-color);
+	padding: 10px 20px;
+	border-radius: 20px;
+
+}
