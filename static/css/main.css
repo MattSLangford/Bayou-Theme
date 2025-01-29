@@ -82,7 +82,7 @@ nav a {
 }
 
 nav a:hover {
-	background: var(--secondary);
+	background: var(--accent);
 	border: 1px solid var(--primary);
 }
 
