@@ -8,7 +8,7 @@
           {{ if .Title }}
               <h2 class="post-title p-name"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
               <div class="post-date-wrapper">
-              <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ partial "dateformat/short" . }}</time></a>
+              <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ partial "dateformat/short" . }}</time>
               </div>
                   {{ if in .RawContent "<!--more-->" }}
                       <div class="p-summary">

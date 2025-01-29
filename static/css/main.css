@@ -251,6 +251,10 @@ footer.site-footer {
 	float: left;
 }
 
+.archive time {
+	font-size: 0.8em;
+}
+
 /* CATEGORIES */
 
 ul.post-tags {
