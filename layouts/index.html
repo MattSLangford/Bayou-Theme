@@ -8,7 +8,7 @@
                     {{ .Content }}
                     <span class="post-date-wrapper">
                         <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">
-                            {{ partial "dateformat/short" . }}
+                            <a href="{{ .Permalink }}">{{ partial "dateformat/short" . }}</a>
                         </time>
                     </span>
                 </div>
