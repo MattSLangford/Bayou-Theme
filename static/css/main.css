@@ -213,6 +213,9 @@ ul.post-tags li {
 }
 
 /* MICROBLOG CONVERSATION */
+.comments {
+	margin-top: 20px;
+}
 
 .microblog_conversation {
 	padding-top: 20px;
