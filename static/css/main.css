@@ -192,17 +192,6 @@ blockquote, pre, .micropost {
 
 pre {
 	overflow: scroll;
-	scrollbar-width: thin; /* Firefox */
-	scrollbar-color: #ccc transparent; /* Firefox */
-}
-
-pre::-webkit-scrollbar {
-  height: 8px; /* Adjust for visibility */
-}
-
-pre::-webkit-scrollbar-thumb {
-  background: #bbb; /* Color of scrollbar */
-  border-radius: 4px;
 }
 
 code {
