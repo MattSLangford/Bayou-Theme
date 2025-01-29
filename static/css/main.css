@@ -130,7 +130,7 @@ img {
 	border-radius: 20px;
 }
 
-blockquote {
+blockquote, pre {
 	background: var(--accent);
 	padding: 10px;
 	border: 1px solid var(--primary);
