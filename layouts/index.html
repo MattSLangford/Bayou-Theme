@@ -2,7 +2,7 @@
 <div class="posts h-feed">
     <div class="post_list" role="main">
         {{ range first 1 (where .Site.RegularPages.ByDate.Reverse "Params.categories" "intersect" (slice "Microposts")) }}
-            <div class="post-preview h-entry">
+            <div class="post-preview h-entry microposts">
                 <div class="e-content">
                     {{ .Content }}
                     <span class="post-date-wrapper">
