@@ -1,10 +1,4 @@
 {
   "paginate": 10,
-  "languages": {
-	"en": {
-	  "i18n": {
-		"Powered by": "Made by"
-	  }
-	}
-  }
+  "defaultContentLanguage": "en"
 }
