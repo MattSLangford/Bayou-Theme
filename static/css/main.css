@@ -261,6 +261,19 @@ div.post-preview {
 	padding-bottom: 20px;
 }
 
+hr {
+	border: none;
+	text-align: center;
+	color: var(--primary);
+	font-size: 1em;
+	line-height: 0;
+}
+
+hr:before {
+	content: "******";
+	color: var(--primary);
+}
+
 /* CATEGORIES */
 
 ul.post-tags {
