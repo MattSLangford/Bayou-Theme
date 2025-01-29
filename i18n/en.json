@@ -7,6 +7,7 @@
     "Replying to post by": "Replying to post by",
     "Read more": "Read More",
     "Fresh off the press": "Fresh Off the Press",
+    "Archive text": "You are viewing all posts from the <strong>{{ .Title }}</strong> category, beginning with the most recent.",
     "Quick update": "Quick Update",
     "Older": "Older",
     "Newer": "Newer",
