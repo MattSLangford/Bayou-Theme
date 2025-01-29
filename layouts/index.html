@@ -1,16 +1,15 @@
 {{ define "main" }}
 <div class="posts h-feed">
     <div class="post_list" role="main">
-        <h3>Latest Update</h3>
         {{ range first 1 (where .Site.RegularPages.ByDate.Reverse "Params.categories" "intersect" (slice "Microposts")) }}
             <div class="post-preview h-entry">
-                <span class="post-date-wrapper">
-                    <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">
-                        {{ partial "dateformat/long" . }}
-                    </time>
-                </span>
                 <div class="e-content">
                     {{ .Content }}
+                    <span class="post-date-wrapper">
+                        <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">
+                            {{ partial "dateformat/long" . }}
+                        </time>
+                    </span>
                 </div>
             </div>
         {{ end }}
