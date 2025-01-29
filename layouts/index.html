@@ -2,7 +2,7 @@
 <div class="posts h-feed">
     <div class="post_list" role="main">
         <h3>Latest Update</h3>
-        {{ with (first 1 (where .Site.Pages.ByDate.Reverse "Type" "post" | where "Params.categories" "intersect" (slice "Microposts"))) }}
+        {{ range first 1 (where .Site.RegularPages.ByDate.Reverse "Params.categories" "intersect" (slice "Microposts")) }}
             <div class="post-preview h-entry">
                 <span class="post-date-wrapper">
                     <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">
@@ -17,7 +17,7 @@
 
         <h3>Latest Posts</h3>
         <ul>
-        {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post" | where "Params.categories" "intersect" (slice "Longform")) }}
+        {{ $paginator := .Paginate (where .Site.RegularPages.ByDate.Reverse "Params.categories" "intersect" (slice "Longform")) }}
         {{ range $paginator.Pages }}
         <li class="post-preview h-entry {{ range .Params.categories }} {{ . | urlize | lower }}{{ end }}">
             <span class="post-date-wrapper">
