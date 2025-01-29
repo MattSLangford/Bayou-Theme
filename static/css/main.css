@@ -110,6 +110,10 @@ nav a:hover {
 	padding: 20px 0;
 }
 
+.post_list ul li:first-of-type {
+	border-top: 1px solid var(--primary);
+}
+
 .post_list ul li span.post-date-wrapper {
 	float: right;
 }
