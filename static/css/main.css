@@ -170,6 +170,10 @@ blockquote, pre, .micropost {
 	margin: 0;
 }
 
+.latest-posts {
+	margin-top: 20px;
+}
+
 pre {
 	overflow: scroll;
 }
