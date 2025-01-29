@@ -42,6 +42,12 @@ html {
 	background: var(--background);
 }
 
+header img.profile_photo {
+	border-radius: 20px;
+	width: 60px;
+	height: auto;
+}
+
 header a {
 	border: none;
 }
