@@ -41,7 +41,7 @@ body {
 	margin: 0 auto;
 	font-family: serif;
 	color: var(--text-color);
-	font-family: var(--primary), Georgia;
+	font-family: var(--font-primary), Georgia;
 	font-size: 1.15em;
 	line-height: 1.5;
 }
@@ -116,7 +116,7 @@ nav a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: var(--secondary), sans-serif;
+	font-family: var(--font-secondary), sans-serif;
 	font-weight: bold;
 }
 
