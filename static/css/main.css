@@ -144,6 +144,7 @@ h1, h2 {
 .micropost time {
 	display: block;
 	text-align: right;
+	font-size: 0.8em;
 }
 
 img {
