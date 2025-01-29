@@ -14,19 +14,21 @@
 	{{ end }}
 	<div class="full-archives h-feed">
 		<h3>{{ T "Full post list" }}</h3>
+		<ul>
 		{{ $list := (where .Site.Pages "Type" "post") }}
 		{{ range $list }}
 
-		<p class="h-entry">
-			<a href="{{ .Permalink }}" class="u-url"><span class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05-0700" }}">{{ partial "dateformat/short" . }}</span></a>:
+		<li class="h-entry">
+			<a href="{{ .Permalink }}" class="u-url"><span class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05-0700" }}">{{ partial "dateformat/short" . }}</span></a>
 			{{ if .Title }}
-			<span class="p-name"><b>{{ .Title }}</b></span>
+			{{ .Title }}
 			{{ else }}
 			<span class="p-summary">{{ .Content | plainify | htmlUnescape | truncate 150 }}</span>
 			{{ end }}
-		</p>
+		</li>
 
 		{{ end }}
+		</ul>
 	</div>
 
 </div>
