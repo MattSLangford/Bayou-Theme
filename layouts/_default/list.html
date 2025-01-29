@@ -1,6 +1,9 @@
 {{ define "main" }}
 <div class="archive h-feed {{ .Title }}">
   <h2 class="p-name category-title">Category: {{ .Title }}</h2>
+  <div>
+    <p>You are viewing all posts from the <strong>{{ .Title }}</strong> category, beginning with the most recent.
+  </div>
   <div class="post_list" role="main">
       {{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") }}
       {{ range .Paginator.Pages }}
