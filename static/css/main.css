@@ -266,11 +266,10 @@ hr {
 	text-align: center;
 	color: var(--primary);
 	font-size: 1em;
-	line-height: 0;
 }
 
 hr:before {
-	content: "******";
+	content: "•—•—•—•—•—•—•";
 	color: var(--primary);
 }
 
