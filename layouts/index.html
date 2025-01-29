@@ -1,10 +1,5 @@
 {{ define "main" }}
 <div class="posts h-feed">
-    {{ if templates.Exists "partials/microhook-intro.html" }}
-        <div class="introduction">
-            {{ partial "microhook-intro.html" . }}
-        </div>
-      {{ end }}
     <div class="post_list" role="main">
         <div class="single-post">
         {{ range first 1 (where .Site.RegularPages.ByDate.Reverse "Params.categories" "intersect" (slice "Microposts")) }}
@@ -20,6 +15,11 @@
             </div>
         {{ end }}
         </div>
+        {{ if templates.Exists "partials/microhook-intro.html" }}
+            <div class="introduction">
+                {{ partial "microhook-intro.html" . }}
+            </div>
+          {{ end }}
         <div class="latest-posts">
         <h4>{{ T "Fresh off the press" }}</h4>
         <ul>
