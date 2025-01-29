@@ -285,3 +285,22 @@ form.microblog_reply_form {
 	border-radius: 20px;
 
 }
+
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+  padding: 5px 10px;
+  border: 1px solid var(--primary);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--primary)
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover {
+  background: var(--accent);
+  text-decoration: none;
+}
