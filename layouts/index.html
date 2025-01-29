@@ -1,6 +1,7 @@
 {{ define "main" }}
 <div class="posts h-feed">
     <div class="post_list" role="main">
+        <h3>Latest Update</h3>
         <h3>Latest Posts</h3>
         <ul>
         {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") }}
