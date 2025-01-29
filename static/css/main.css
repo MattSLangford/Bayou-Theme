@@ -6,6 +6,8 @@
 	--secondary: lightgray;
 	--accent: #D6E9F8;
 	--text-color: #000;
+	--black: #000;
+	--white: #000;
 	--font-primary: 'Atkinson Hyperlegible';
 	--font-secondary: 'Inter';
 }
@@ -156,6 +158,14 @@ blockquote, pre, .micropost {
 	background: var(--accent);
 	padding: 10px 20px;
 	border: 1px solid var(--primary);
+	border-radius: 10px;
+	margin: 0;
+}
+
+.micropost blockquote, .micropost pre {
+	background: var(--secondary);
+	padding: 10px 20px;
+	border: 1px solid var(--black);
 	border-radius: 10px;
 	margin: 0;
 }
