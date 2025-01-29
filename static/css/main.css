@@ -59,11 +59,11 @@ body {
 a {
 	color: var(--primary);
 	text-decoration: none;
-	border-bottom: 1px solid var(--primary);
 }
 
 a:hover {
 	border: none;
+	text-decoration: underline;
 }
 
 nav {
@@ -196,6 +196,15 @@ footer.site-footer {
 	margin-top: 120px;
 	margin-bottom: 50px;
 	text-align: center;
+	font-size: 0.8em;
+}
+
+/* CATEGORIES */
+
+ul.post-tags {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 	font-size: 0.8em;
 }
 
