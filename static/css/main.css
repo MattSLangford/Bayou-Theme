@@ -1,41 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
 	--background: #FFF;
 	--primary: #496679;
 	--secondary: lightgray;
 	--accent: lightblue;
 	--text-color: #666;
-}
-
-@font-face {
-	font-family: 'Atkinson Hyperlegible';
-	src: url('fonts/Atkinson-Hyperlegible-Regular-102a.woff2') format('woff2'),
-		 url('fonts/Atkinson-Hyperlegible-Regular-102.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Atkinson Hyperlegible';
-	src: url('fonts/Atkinson-Hyperlegible-Italic-102a.woff2') format('woff2'),
-		 url('fonts/Atkinson-Hyperlegible-Italic-102.woff') format('woff');
-	font-weight: normal;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'Atkinson Hyperlegible';
-	src: url('fonts/Atkinson-Hyperlegible-Bold-102a.woff2') format('woff2'),
-		 url('fonts/Atkinson-Hyperlegible-Bold-102.woff') format('woff');
-	font-weight: bold;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Atkinson Hyperlegible';
-	src: url('fonts/Atkinson-Hyperlegible-BoldItalic-102a.woff2') format('woff2'),
-		 url('fonts/Atkinson-Hyperlegible-BoldItalic-102.woff') format('woff');
-	font-weight: bold;
-	font-style: italic;
+	--font-primary: 'Atkinson Hyperlegible';
+	--font-secondary: 'Inter';
 }
 
 html {
@@ -69,7 +41,7 @@ body {
 	margin: 0 auto;
 	font-family: serif;
 	color: var(--text-color);
-	font-family: 'Atkinson Hyperlegible', sans-serif;
+	font-family: var(--primary), Georgia;
 	font-size: 1.15em;
 	line-height: 1.5;
 }
@@ -144,7 +116,7 @@ nav a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: Verdana, sans-serif;
+	font-family: var(--secondary), sans-serif;
 	font-weight: bold;
 }
 
