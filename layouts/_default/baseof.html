@@ -31,6 +31,9 @@
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   {{ partial "microblog_head.html" . }}
+  {{ if templates.Exists "partials/microhook-head.html" }}
+  {{ partial "microhook-head.html" . }}
+  {{ end }}
 </head>
 <body>
   <header class="site-header">
@@ -64,6 +67,9 @@
   </footer>
   {{ range .Site.Params.plugins_js }}
   <script src="{{ . }}"></script>
+  {{ end }}
+  {{ if templates.Exists "partials/microhook-before-closing-body.html" }}
+  {{ partial "microhook-before-closing-body.html" . }}
   {{ end }}
 </body>
 </html>
