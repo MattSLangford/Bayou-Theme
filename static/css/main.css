@@ -220,6 +220,7 @@ footer.site-footer {
 	width: 40px;
 	vertical-align: middle;
 	margin-bottom: 0;
+	height: auto;
 }
 
 .microblog_user {
