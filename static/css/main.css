@@ -12,6 +12,7 @@
 
 html {
 	background: var(--background);
+	-webkit-font-smoothing: antialiased;
 }
 
 header img.profile_photo {
