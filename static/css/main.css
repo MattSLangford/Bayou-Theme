@@ -35,9 +35,10 @@ header img.profile_photo {
 	height: auto;
 }
 
-header a {
-	border: none;
+header a:hover {
+	text-decoration: none;
 }
+
 
 header .site-title {
 	display: flex;
@@ -101,6 +102,7 @@ nav a {
 nav a:hover {
 	background: var(--accent);
 	border: 1px solid var(--primary);
+	text-decoration: none;
 }
 
 .post_list {
