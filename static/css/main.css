@@ -258,6 +258,7 @@ footer.site-footer {
 div.post-preview {
 	border-bottom: 1px solid var(--primary);
 	margin-bottom: 20px;
+	padding-bottom: 20px;
 }
 
 /* CATEGORIES */
