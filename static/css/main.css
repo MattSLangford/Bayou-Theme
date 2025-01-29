@@ -134,4 +134,5 @@ blockquote {
 	background: var(--accent);
 	padding: 10px;
 	border: 1px solid;
+	border-radius: 20px;
 }
