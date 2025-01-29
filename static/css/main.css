@@ -149,3 +149,9 @@ blockquote, pre, .micropost {
 pre {
 	overflow: scroll;
 }
+
+footer.site-footer {
+	margin-top: 120px;
+	text-align: center;
+	font-size: 0.8em;
+}
