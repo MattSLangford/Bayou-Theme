@@ -52,6 +52,10 @@ header a {
 	border: none;
 }
 
+header h1 {
+	margin-top: 5px;
+}
+
 body {
 	max-width: 700px;
 	padding: 20px;
