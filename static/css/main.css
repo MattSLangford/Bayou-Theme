@@ -137,7 +137,7 @@ img {
 	border-radius: 10px;
 }
 
-blockquote, pre {
+blockquote, pre, .micropost {
 	background: var(--accent);
 	padding: 10px 20px;
 	border: 1px solid var(--primary);
