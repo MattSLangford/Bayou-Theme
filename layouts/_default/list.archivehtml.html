@@ -1,6 +1,19 @@
 {{ define "main" }}
 <div class="archive">
 	<h2 class="p-name post-title">{{ T "Archive" }}</h2>
+	<h3>Latest Update</h3>
+	{{ range first 1 (where .Site.RegularPages.ByDate.Reverse "Params.categories" "intersect" (slice "Microposts")) }}
+		<div class="post-preview h-entry micropost">
+			<div class="e-content">
+				{{ .Content }}
+				<span class="post-date-wrapper">
+					<time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">
+						<a href="{{ .Permalink }}">{{ partial "dateformat/short" . }}</a>
+					</time>
+				</span>
+			</div>
+		</div>
+	{{ end }}
 	{{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
 	{{ if gt (len $list) 0 }}
 	<div class="archive-categories">
