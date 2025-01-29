@@ -66,6 +66,7 @@ a:hover {
 nav {
 	font-size: 0.8em;
 	font-family: var(--font-secondary);
+	font-weight: 600;
 }
 
 nav ul {
