@@ -52,6 +52,12 @@ header a {
 	border: none;
 }
 
+header .site-title {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
 header h1 {
 	display: inline;
 }
