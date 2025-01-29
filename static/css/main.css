@@ -129,3 +129,9 @@ img {
 	max-width: 100%;
 	border-radius: 20px;
 }
+
+blockquote {
+	background: var(--accent);
+	padding: 10px;
+	border: 1px solid;
+}
