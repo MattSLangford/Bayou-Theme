@@ -255,6 +255,11 @@ footer.site-footer {
 	font-size: 0.8em;
 }
 
+div.post-preview {
+	border-bottom: 1px solid var(--primary);
+	margin-bottom: 20px;
+}
+
 /* CATEGORIES */
 
 ul.post-tags {
