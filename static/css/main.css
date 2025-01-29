@@ -208,6 +208,10 @@ ul.post-tags {
 	font-size: 0.8em;
 }
 
+ul.post-tags li {
+	display: inline;
+}
+
 /* MICROBLOG CONVERSATION */
 
 .microblog_conversation {
