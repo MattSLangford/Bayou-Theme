@@ -153,6 +153,10 @@ h1, h2 {
 	font-size: 1.8em;
 }
 
+h2 {
+	margin-bottom: 5px;
+}
+
 .micropost time {
 	display: block;
 	text-align: right;
@@ -161,7 +165,6 @@ h1, h2 {
 
 .post time, .page time {
 	font-size: 0.8em;
-	margin-top: -20px;
 	display: block;
 }
 
