@@ -418,3 +418,8 @@ img.photos-grid-item {
 	border-radius: 5px;
 	color: white;
 }
+
+/* Placeholder */
+.placeholder {
+	height: 30px;
+}
