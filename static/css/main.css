@@ -488,3 +488,7 @@ form label {
 #guestbooks___guestbook-form br {
 	display: none;
 }
+
+.post-nav {
+	text-align: center;
+}
