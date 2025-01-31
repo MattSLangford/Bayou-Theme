@@ -386,3 +386,11 @@ input[type="reset"]:hover {
 	border-radius: 0 !important;
 	margin: 0 !important;
 }
+
+.photos-grid-container a, .photos-grid a {
+	border: none;
+}
+
+img.photos-grid-item {
+	border-radius: 0 !important;
+}
