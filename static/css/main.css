@@ -450,3 +450,12 @@ img.photos-grid-item {
 	font-style: italic;
 }
 
+figure {
+	margin: 0;
+}
+
+figcaption {
+	font-style: italic;
+	text-align: center;
+	font-size: 0.8em;
+}
