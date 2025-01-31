@@ -383,8 +383,9 @@ input[type="reset"]:hover {
 	width: calc(100% / 3) !important;
 	height: auto !important;
 	aspect-ratio: 1 / 1;
-	border-radius: 0 !important;
+	border-radius: 10px !important;
 	margin: 0 !important;
+	padding: 5px !important;
 }
 
 .photos-grid-container a, .photos-grid a {
