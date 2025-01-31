@@ -6,7 +6,7 @@
     {{ if .Title }}
     <h2 class="p-name post-title">{{ .Title }}</h2>
     {{ else }}
-    {{ if eq .Section "microblog" }}
+    {{ if eq .Section "microposts" }}
         <h2 class="p-name post-title">{{ T "Quick update" }}</h2>
     {{ end }}
     {{ end }}
