@@ -458,3 +458,7 @@ figcaption {
 	text-align: center;
 	font-size: 0.8em;
 }
+
+iframe.letterbird-embed {
+	max-width: 100% !important;
+}
