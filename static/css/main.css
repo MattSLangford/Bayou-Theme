@@ -491,3 +491,7 @@ form select {
 form label {
 	display: block;
 }
+
+#guestbooks___guestbook-form br {
+	display: none;
+}
