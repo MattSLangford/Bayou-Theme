@@ -408,3 +408,13 @@ a.reply-on-mastodon:hover {
 img.photos-grid-item {
 	border-radius: 0 !important;
 }
+
+/* Shared Notes */
+
+.microblog_shared_note {
+	background: #D23C3C;
+	padding: 5px;
+	text-align: center;
+	border-radius: 5px;
+	color: white;
+}
