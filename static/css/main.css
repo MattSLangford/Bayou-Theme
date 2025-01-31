@@ -474,3 +474,14 @@ iframe.letterbird-embed {
 .replies .post-date-wrapper {
 	font-size: 0.8em;
 }
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea,
+form select {
+  padding: 10px;
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  font-size: 1em;
+}
