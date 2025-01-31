@@ -361,7 +361,7 @@ p.microblog_reply_signin {
 	border: 1px solid var(--tertiary);
 	border-radius: 20px;
 	padding: 20px;
-	width: calc(100% - 40px);
+	width: 100%;
 	resize: none;
 }
 
