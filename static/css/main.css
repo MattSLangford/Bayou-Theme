@@ -478,6 +478,7 @@ iframe.letterbird-embed {
 form input[type="text"],
 form input[type="email"],
 form input[type="password"],
+form input[type="url"],
 form textarea,
 form select {
   padding: 10px;
