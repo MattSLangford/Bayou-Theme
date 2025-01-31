@@ -111,7 +111,7 @@ nav a:hover {
 }
 
 .post_list {
-	margin-top: 50px;
+	margin-top: 25px;
 }
 
 .post_list ul, ul.reply-buttons {
@@ -434,7 +434,7 @@ img.photos-grid-item {
 
 /* Placeholder */
 .placeholder {
-	height: 30px;
+	height: 20px;
 }
 
 /* Footnotes */
