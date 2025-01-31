@@ -486,3 +486,7 @@ form select {
   font-size: 1em;
   margin-bottom: 10px;
 }
+
+form label {
+	display: block;
+}
