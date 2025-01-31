@@ -210,7 +210,6 @@ p.note, p.alert {
 }
 
 p.alert {
-	color: var(--white);
 	background-color: var(--alert);
 	border: 1px solid var(--alert-accent);
 }
