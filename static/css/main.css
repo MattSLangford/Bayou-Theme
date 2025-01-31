@@ -479,9 +479,9 @@ form label {
 	display: block;
 }
 
-input[type="submit"],
-input[type="button"],
-input[type="reset"], {
+form input[type="submit"],
+form input[type="button"],
+form input[type="reset"] {
 	padding: 10px;
 	border: 1px solid var(--primary);
 	border-radius: 10px;
