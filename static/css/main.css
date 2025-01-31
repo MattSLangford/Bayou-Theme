@@ -291,15 +291,8 @@ div.post-preview {
 }
 
 hr {
-	border: none;
+	border: 1px dashed var(--accent);
 	text-align: center;
-	color: var(--primary);
-	font-size: 1em;
-}
-
-hr:before {
-	content: "•—•—•—•—•—•—•";
-	color: var(--primary);
 }
 
 /* CATEGORIES */
