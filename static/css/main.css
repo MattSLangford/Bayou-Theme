@@ -115,7 +115,7 @@ nav a:hover {
 	padding: 0;
 }
 
-.post_list ul li, ul.reply-buttons li {
+.post_list ul li {
 	padding: 0;
 	margin: 0;
 	border-bottom: 1px solid var(--primary);
@@ -143,6 +143,13 @@ nav a:hover {
 	white-space: nowrap;
 	max-width: calc(100% - 120px);
 	float: left;
+}
+
+ul.reply-buttons li {
+	display: inline;
+	padding: 0;
+	margin: 0;
+	line-height: 2.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
