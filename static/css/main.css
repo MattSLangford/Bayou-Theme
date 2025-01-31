@@ -377,3 +377,12 @@ input[type="reset"]:hover {
   background: var(--accent);
   text-decoration: none;
 }
+
+/* Photo Collection */
+.microblog_collection img {
+	width: calc(100% / 3) !important;
+	height: auto !important;
+	aspect-ratio: 1 / 1;
+	border-radius: 0 !important;
+	margin: 0 !important;
+}
