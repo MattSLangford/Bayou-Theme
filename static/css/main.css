@@ -374,9 +374,6 @@ form.microblog_reply_form {
 }
 
 button,
-input[type="submit"],
-input[type="button"],
-input[type="reset"],
 a.reply-by-email,
 a.conversation-on-mb,
 a.reply-on-mastodon {
@@ -393,9 +390,6 @@ a.reply-on-mastodon {
 }
 
 button:hover,
-input[type="submit"]:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
 a.reply-by-email:hover,
 a.conversation-on-mb:hover,
 a.reply-on-mastodon:hover {
@@ -483,6 +477,17 @@ form select {
 
 form label {
 	display: block;
+}
+
+input[type="submit"],
+input[type="button"],
+input[type="reset"], {
+	padding: 10px;
+	border: 1px solid var(--primary);
+	border-radius: 10px;
+	font-size: 1em;
+	margin-bottom: 10px;
+	min-width: 100px;
 }
 
 #guestbooks___guestbook-form br {
