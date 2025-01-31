@@ -38,17 +38,4 @@
         </div>
     </div>
 </div>
-
-<div class="post-nav">
-    {{ if $paginator.HasPrev }}
-    <span class="prev">
-        <a href="{{ $paginator.Prev.URL }}" title="Previous Page"><button>← {{ T "Newer" }}</button></a>
-    </span>
-    {{ end }}
-    {{ if $paginator.HasNext }}
-    <span class="next">
-        <a href="{{ $paginator.Next.URL }}"><button>{{ T "Older" }} →</button></a>
-    </span>
-    {{ end }}
-</div>
 {{ end }}
