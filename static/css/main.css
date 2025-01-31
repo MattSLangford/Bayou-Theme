@@ -11,8 +11,8 @@
 	--white: #fff;
 	--font-primary: 'Atkinson Hyperlegible';
 	--font-secondary: 'Inter';
-	--alert: #F08080;
-	--alert-accent: #FA8072;
+	--alert: #FFE4E1;
+	--alert-accent: #FFDAB9;
 	--note: #FFF9DB;
 	--note-accent: #D2B48C;
 }
@@ -432,7 +432,8 @@ img.photos-grid-item {
 /* Shared Notes */
 
 .microblog_shared_note {
-	background: #D23C3C;
+	background: var(--alert);
+	border: 1px solid var(--alert-accent);
 	padding: 5px;
 	text-align: center;
 	border-radius: 5px;
