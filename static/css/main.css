@@ -462,3 +462,14 @@ figcaption {
 iframe.letterbird-embed {
 	max-width: 100% !important;
 }
+
+.replies .h-entry {
+	background: var(--secondary);
+	border: 1px solid var(--tertiary);
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.replies .post-date-wrapper {
+	font-size: 0.8em;
+}
