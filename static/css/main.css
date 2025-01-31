@@ -468,6 +468,7 @@ iframe.letterbird-embed {
 	border: 1px solid var(--tertiary);
 	padding: 10px;
 	border-radius: 10px;
+	margin-bottom: 20px;
 }
 
 .replies .post-date-wrapper {
