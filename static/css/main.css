@@ -110,12 +110,12 @@ nav a:hover {
 	margin-top: 50px;
 }
 
-.post_list ul {
+.post_list ul, ul.reply-buttons {
 	list-style-type: none;
 	padding: 0;
 }
 
-.post_list ul li {
+.post_list ul li, ul.reply-buttons li {
 	padding: 0;
 	margin: 0;
 	border-bottom: 1px solid var(--primary);
@@ -357,7 +357,9 @@ form.microblog_reply_form {
 button,
 input[type="submit"],
 input[type="button"],
-input[type="reset"] {
+input[type="reset"],
+a.reply-by-email,
+a.conversation-on-mb {
   padding: 5px 10px;
   border: 1px solid var(--primary);
   border-radius: 20px;
@@ -373,7 +375,9 @@ input[type="reset"] {
 button:hover,
 input[type="submit"]:hover,
 input[type="button"]:hover,
-input[type="reset"]:hover {
+input[type="reset"]:hover,
+a.reply-by-email:hover,
+a.conversation-on-mb:hover {
   background: var(--accent);
   text-decoration: none;
 }
