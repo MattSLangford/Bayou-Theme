@@ -11,6 +11,10 @@
 	--white: #fff;
 	--font-primary: 'Atkinson Hyperlegible';
 	--font-secondary: 'Inter';
+	--alert: #D23C3C;
+	--alert-accent: #B56565;
+	--note: #FFF9DB;
+	--note-accent: #D2B48C;
 }
 
 *,
@@ -197,6 +201,23 @@ blockquote, pre, .micropost {
 	border: 1px solid var(--black);
 	border-radius: 10px;
 	margin: 0;
+}
+
+p.note, p.alert {
+	padding: 10px 20px;
+	border-radius: 10px;
+	margin: 0;
+}
+
+p.alert {
+	color: var(--white);
+	background-color: var(--alert);
+	border: 1px solid var(--alert-accent);
+}
+
+p.note {
+	background-color: var(--note);
+	border: 1px solid var(--note-accent);
 }
 
 .latest-posts {
@@ -428,3 +449,4 @@ img.photos-grid-item {
 .footnotes {
 	font-style: italic;
 }
+
