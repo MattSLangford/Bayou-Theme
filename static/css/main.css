@@ -151,6 +151,10 @@ nav a:hover {
 	float: left;
 }
 
+.post_list ul li a:hover {
+	text-decoration: underline;
+}
+
 ul.reply-buttons li {
 	display: inline;
 	padding: 0;
@@ -503,3 +507,6 @@ p.view-all {
 	text-align: right;
 }
 
+p.view-all a:hover {
+	text-decoration: none;
+}
