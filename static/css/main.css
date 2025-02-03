@@ -93,7 +93,7 @@ nav ul li {
 	display: inline;
 	padding: 0;
 	margin: 0;
-	line-height: 3;
+	line-height: 2.5;
 }
 
 nav a {
@@ -491,4 +491,8 @@ form label {
 
 .post-nav {
 	text-align: center;
+}
+
+.category-list a {
+	line-height: 2.5;
 }
