@@ -498,3 +498,7 @@ form label {
 .category-list a {
 	line-height: 2.5;
 }
+
+p.view-all {
+	text-align: right;
+}
