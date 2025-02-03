@@ -506,7 +506,3 @@ form label {
 p.view-all {
 	text-align: right;
 }
-
-p.view-all a:hover {
-	text-decoration: none;
-}
