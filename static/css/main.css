@@ -117,6 +117,8 @@ nav a:hover {
 .post_list ul, ul.reply-buttons {
 	list-style-type: none;
 	padding: 0;
+	white-space: nowrap;
+	line-height: 2;
 }
 
 .post_list ul li {
