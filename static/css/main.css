@@ -114,14 +114,14 @@ nav a:hover {
 	margin-top: 25px;
 }
 
-.latest-post ul, ul.reply-buttons {
+.latest-posts ul, ul.reply-buttons {
 	list-style-type: none;
 	padding: 0;
 	white-space: nowrap;
 	line-height: 2;
 }
 
-.latest-post ul li {
+.latest-posts ul li {
 	padding: 0;
 	margin: 0;
 	border-bottom: 1px solid var(--primary);
@@ -129,19 +129,19 @@ nav a:hover {
 	padding: 20px 0;
 }
 
-.latest-post ul li:first-of-type {
+.latest-posts ul li:first-of-type {
 	border-top: 1px solid var(--primary);
 }
 
-.latest-post ul li span.post-date-wrapper {
+.latest-posts ul li span.post-date-wrapper {
 	float: right;
 }
 
-.latest-post ul li p {
+.latest-posts ul li p {
 	display: inline;
 }
 
-.latest-post ul li a {
+.latest-posts ul li a {
 	text-decoration: none;
 	border: none;
 	text-overflow: ellipsis;
@@ -151,7 +151,7 @@ nav a:hover {
 	float: left;
 }
 
-.latest-post ul li a:hover {
+.latest-posts ul li a:hover {
 	text-decoration: underline;
 }
 
