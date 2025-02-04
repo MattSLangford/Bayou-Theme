@@ -2,6 +2,9 @@
 <div class="posts h-feed">
     <div class="post_list" role="main">
         <div class="single-post">
+        {{ if templates.Exists "partials/microhook-category-microposts.html" }}
+        {{ partial "microhook-category-microposts.html" . }}
+        {{ else }}
         {{ range first 1 (where .Site.RegularPages.ByDate.Reverse "Params.categories" "intersect" (slice "Microposts")) }}
             <div class="post-preview h-entry micropost">
                 <div class="e-content">
@@ -14,6 +17,7 @@
                 </div>
             </div>
         {{ end }}
+        {{ end }}
         </div>
         {{ if templates.Exists "partials/microhook-intro.html" }}
             <div class="introduction">
@@ -22,6 +26,9 @@
           {{ end }}
         <div class="latest-posts">
         <h4>{{ T "Fresh off the press" }}</h4>
+        {{ if templates.Exists "partials/microhook-category-longform.html" }}
+        {{ partial "microhook-category-longform.html" . }}
+        {{ else }}
         <ul>
         {{ $paginator := .Paginate (where .Site.RegularPages.ByDate.Reverse "Params.categories" "intersect" (slice "Longform")) }}
         {{ range $paginator.Pages }}
@@ -36,6 +43,7 @@
         {{ end }}
         </ul>
         <p class="view-all"><a href="{{ "categories/longform/" | relURL }}">{{ T "View all" }} →</a></p>
+        {{ end }}
         </div>
     </div>
 </div>
