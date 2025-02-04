@@ -201,12 +201,21 @@ blockquote, pre, .micropost {
 	margin: 0;
 }
 
-.micropost blockquote, .micropost pre {
+.micropost blockquote {
+	border: none;
+	font-style: italic;
+}
+
+.micropost pre {
 	background: var(--secondary);
 	padding: 10px 20px;
 	border: 1px solid var(--black);
 	border-radius: 10px;
 	margin: 0;
+}
+
+.micropost code {
+	border: none;
 }
 
 p.note, p.alert {
