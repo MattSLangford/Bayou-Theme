@@ -114,14 +114,14 @@ nav a:hover {
 	margin-top: 25px;
 }
 
-.post_list ul, ul.reply-buttons {
+.latest-post ul, ul.reply-buttons {
 	list-style-type: none;
 	padding: 0;
 	white-space: nowrap;
 	line-height: 2;
 }
 
-.post_list ul li {
+.latest-post ul li {
 	padding: 0;
 	margin: 0;
 	border-bottom: 1px solid var(--primary);
@@ -129,19 +129,19 @@ nav a:hover {
 	padding: 20px 0;
 }
 
-.post_list ul li:first-of-type {
+.latest-post ul li:first-of-type {
 	border-top: 1px solid var(--primary);
 }
 
-.post_list ul li span.post-date-wrapper {
+.latest-post ul li span.post-date-wrapper {
 	float: right;
 }
 
-.post_list ul li p {
+.latest-post ul li p {
 	display: inline;
 }
 
-.post_list ul li a {
+.latest-post ul li a {
 	text-decoration: none;
 	border: none;
 	text-overflow: ellipsis;
@@ -151,7 +151,7 @@ nav a:hover {
 	float: left;
 }
 
-.post_list ul li a:hover {
+.latest-post ul li a:hover {
 	text-decoration: underline;
 }
 
