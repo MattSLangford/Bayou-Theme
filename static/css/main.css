@@ -239,7 +239,7 @@ p.note {
 }
 
 pre {
-	overflow: scroll;
+	overflow: auto;
 }
 
 code {
