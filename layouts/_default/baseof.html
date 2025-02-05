@@ -54,8 +54,11 @@
       </ul>
     </nav>
   </header>
-  <div class="page-content">
+  <div class="page-content-wrapper">
+    <div class="page-content">
       {{ block "main" . }}{{ end }}
+    </div>
+    {{ if templates.Exists "partials/microhook-below-wrapper.html" }}{{ partial "microhook-below-wrapper.html" . }}{{ end }}
   </div>
   <footer class="site-footer">
 
