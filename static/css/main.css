@@ -240,6 +240,7 @@ p.note {
 
 pre {
 	overflow: auto;
+	overflow: overlay;
 }
 
 code {
