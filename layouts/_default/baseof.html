@@ -58,7 +58,7 @@
     <div class="page-content">
       {{ block "main" . }}{{ end }}
     </div>
-    {{ if templates.Exists "partials/microhook-below-wrapper.html" }}{{ partial "microhook-below-wrapper.html" . }}{{ end }}
+    {{ if templates.Exists "partials/microhook-after-content.html" }}{{ partial "microhook-after-content.html" . }}{{ end }}
   </div>
   <footer class="site-footer">
 
