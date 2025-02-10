@@ -218,18 +218,18 @@ blockquote, pre, .micropost {
 	border: none;
 }
 
-p.note, p.alert {
+div.note, p.note, div.alert, p.alert {
 	padding: 10px 20px;
 	border-radius: 10px;
 	margin: 0;
 }
 
-p.alert {
+div.alert, p.alert {
 	background-color: var(--alert);
 	border: 1px solid var(--alert-accent);
 }
 
-p.note {
+div.note, p.note {
 	background-color: var(--note);
 	border: 1px solid var(--note-accent);
 }
