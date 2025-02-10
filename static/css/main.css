@@ -198,12 +198,13 @@ blockquote, pre, .micropost {
 	padding: 10px 20px;
 	border: 1px solid var(--primary);
 	border-radius: 10px;
-	margin: 0;
+	margin: 0 0 10px 0;
 }
 
 .micropost blockquote {
 	border: none;
 	font-style: italic;
+	margin-bottom: 10px;
 }
 
 .micropost pre {
@@ -211,7 +212,7 @@ blockquote, pre, .micropost {
 	padding: 10px 20px;
 	border: 1px solid var(--black);
 	border-radius: 10px;
-	margin: 0;
+	margin: 0 0 10px 0;
 }
 
 .micropost code {
