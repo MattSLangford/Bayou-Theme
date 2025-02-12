@@ -1,3 +1,3 @@
-Bayou Theme for Micro.blog Version 1.1.7
+Bayou Theme for Micro.blog Version 1.1.8
 Created by Matt Langford (mattlangford.com)
 Documentation: bayou.micro.blog
