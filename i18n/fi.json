@@ -1,17 +1,17 @@
 {
     "Archive": "Arkisto",
-    "Categories": "Kateogoriat",
+    "Categories": "Kategoriat",
     "Full post list": "Kaikki kirjoitukset",
     "Recent replies": "Viimeisimmät vastaukset",
-    "Replying to": "Vastauksena käyttäjälle",
-    "Replying to post by": "Vastauksena kirjoitukseen käyttäjältä",
+    "Replying to": "Vastauksena",
+    "Replying to post by": "Vastauksena käyttäjän kirjoitukseen",
     "Read more": "Lue lisää",
-    "Fresh off the press": "Tuoreimmat",
+    "Fresh off the press": "Tuoreimmat julkaisut",
     "View all": "Näytä kaikki",
     "Archive text": "Kaikki tämän kategorian kirjoitukset, alkaen uusimmasta.",
-    "Quick update": "Nopea päivitys",
+    "Quick update": "Pikapäivitys",
     "Older": "Vanhemmat",
     "Newer": "Uudemmat",
-    "Powered by": "Voimanlähteenä toimii",
+    "Powered by": "Teemana",
     "Designed by": "Suunnitellut"
 }
