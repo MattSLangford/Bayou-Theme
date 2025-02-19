@@ -12,7 +12,7 @@
 		},
 		{
 			"field": "dateFormatShort",
-			"type": "text",
+			"type": "string",
 			"label": "Date Format",
 			"placeholder": "The format for dates. Ex: 2 Jan 2006"
 		}
