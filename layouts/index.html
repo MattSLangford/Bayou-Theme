@@ -5,7 +5,8 @@
         {{ if templates.Exists "partials/microhook-category-microposts.html" }}
         {{ partial "microhook-category-microposts.html" . }}
         {{ else }}
-        {{ range first 1 (where .Site.RegularPages.ByDate.Reverse "Params.categories" "intersect" (slice "Microposts")) }}
+        {{ $micropostsCount := .Site.Params.microposts_count | default 1 }}
+        {{ range first $micropostsCount (where .Site.RegularPages.ByDate.Reverse "Params.categories" "intersect" (slice "Microposts")) }}
             <div class="post-preview h-entry micropost">
                 <div class="e-content">
                     {{ .Content }}

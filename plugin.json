@@ -1,5 +1,13 @@
 {
 	"version": "1.1.8",
 	"title": "Bayou Theme",
-	"description": "Bayou Theme separates microposts from longform content using a unique design. Use of the theme requires following the setup process found at bayou.micro.blog. Follow @mtt on Micro.blog for support."
+	"description": "Bayou Theme separates microposts from longform content using a unique design. Use of the theme requires following the setup process found at bayou.micro.blog. Follow @mtt on Micro.blog for updates.",
+	"fields": [
+		{
+			"field": "params.microposts_count",
+			"label": "Number of Microposts",
+			"type": "number",
+			"placeholder": "Enter the number of microposts to display"
+		}
+	]
 }
