@@ -6,8 +6,8 @@
 		{
 			"field": "paginate",
 			"type": "number",
-			"default": 20,
-			"name": "Posts Per Page",
+			"placeholder": 20,
+			"label": "Posts Per Page",
 			"description": "The number of posts displayed per page."
 		},
 		{
@@ -30,14 +30,14 @@
 		{
 			"field": "dateFormatLong",
 			"type": "text",
-			"default": "2 January 2006",
+			"placeholder": "2 January 2006",
 			"label": "Long Date Format",
 			"description": "The format for long-form dates. Example: 2 January 2006"
 		},
 		{
 			"field": "dateFormatShort",
 			"type": "text",
-			"default": "2 Jan 2006",
+			"placeholder": "2 Jan 2006",
 			"label": "Short Date Format",
 			"description": "The format for short-form dates. Example: 2 Jan 2006"
 		}
