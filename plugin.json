@@ -1,21 +1,5 @@
 {
 	"version": "1.1.8",
 	"title": "Bayou Theme",
-	"description": "Bayou Theme separates microposts from longform content using a unique design. Use of the theme requires following the setup process found at bayou.micro.blog. Follow @mtt on Micro.blog for support.",
-	"fields": [
-		{
-			"field": "defaultContentLanguage",
-			"type": "string",
-			"default": "en",
-			"label": "Default Language",
-			"placeholder": "The default language for the site."
-		},
-		{
-			"field": "dateFormatShort",
-			"type": "text",
-			"label": "Date Format",
-			"placeholder": "The format for dates. Ex: 2 Jan 2006"
-		}
-	]
+	"description": "Bayou Theme separates microposts from longform content using a unique design. Use of the theme requires following the setup process found at bayou.micro.blog. Follow @mtt on Micro.blog for support."
 }
-
