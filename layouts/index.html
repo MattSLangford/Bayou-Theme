@@ -6,7 +6,8 @@
         {{ partial "microhook-category-microposts.html" . }}
         {{ else }}
         {{ $micropostsCount := .Site.Params.microposts_count | default 1 }}
-        {{ range first $micropostsCount (where .Site.RegularPages.ByDate.Reverse "Params.categories" "intersect" (slice "Microposts")) }}
+        {{ $customMicroposts := .Site.Params.custom_microposts | default "Microposts" }}
+        {{ range first $micropostsCount (where .Site.RegularPages.ByDate.Reverse "Params.categories" "intersect" (slice $customMicroposts)) }}
             <div class="post-preview h-entry micropost">
                 <div class="e-content">
                     {{ .Content }}
@@ -32,7 +33,8 @@
         {{ else }}
         <ul>
         {{ $longformCount := .Site.Params.longform_count | default 10 }}
-        {{ range first $longformCount (where .Site.RegularPages.ByDate.Reverse "Params.categories" "intersect" (slice "Longform")) }}
+        {{ $customLongform := .Site.Params.custom_longform | default "Longform" }}
+        {{ range first $longformCount (where .Site.RegularPages.ByDate.Reverse "Params.categories" "intersect" (slice $customLongform)) }}
         <li class="post-preview h-entry {{ range .Params.categories }} {{ . | urlize | lower }}{{ end }}">
             <span class="post-date-wrapper">
                 <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">

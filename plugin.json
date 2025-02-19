@@ -20,6 +20,18 @@
 			"label": "Number of Longform Posts",
 			"type": "number",
 			"placeholder": "Enter the number of longform posts to display"
+		},
+		{
+			"field": "params.custom_microposts",
+			"label": "Custom Micropost Category",
+			"type": "text",
+			"placeholder": "Enter a custom category to display (default: Microposts)"
+		},
+		{
+			"field": "params.custom_longform",
+			"label": "Custom Longform Category",
+			"type": "text",
+			"placeholder": "Enter a custom category to display (default: Longform)"
 		}
 	]
 }
