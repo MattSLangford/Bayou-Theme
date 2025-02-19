@@ -32,6 +32,12 @@
 			"label": "Custom Longform Category",
 			"type": "text",
 			"placeholder": "Enter a custom category to display (default: Longform)"
+		},
+		{
+			"field": "params.dateFormatShort",
+			"label": "Date Format",
+			"type": "text",
+			"placeholder": "Enter the date format (e.g., 2 Jan 2006)"
 		}
 	]
 }
