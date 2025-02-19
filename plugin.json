@@ -6,7 +6,7 @@
 		{
 			"field": "params.defaultContentLanguage",
 			"label": "Site Language",
-			"type": "text",
+			"type": "string",
 			"placeholder": "Enter the language code (e.g., en, fr, es)"
 		},
 		{
