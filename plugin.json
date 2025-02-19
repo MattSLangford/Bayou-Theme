@@ -4,7 +4,7 @@
 	"description": "Bayou Theme separates microposts from longform content using a unique design. Use of the theme requires following the setup process found at bayou.micro.blog. Follow @mtt on Micro.blog for updates.",
 	"fields": [
 		{
-			"field": "params.language",
+			"field": "params.defaultContentLanguage",
 			"label": "Site Language",
 			"type": "text",
 			"placeholder": "Enter the language code (e.g., en, fr, es)"
