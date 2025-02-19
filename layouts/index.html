@@ -13,7 +13,7 @@
                     {{ .Content }}
                     <span class="post-date-wrapper">
                         <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">
-                            <a href="{{ .Permalink }}">{{ partial "dateformat/short" . }}</a> | <a href="{{ "categories/microposts/" | relURL }}">{{ T "View all" }} →</a>
+                            <a href="{{ .Permalink }}">{{ partial "dateformat/short" . }}</a> | <a href="{{ (print "categories/" $customMicroposts | urlize) | relURL }}">{{ T "View all" }} →</a>
                         </time>
                     </span>
                 </div>
@@ -45,7 +45,7 @@
         </li>
         {{ end }}
         </ul>
-        <p class="view-all"><a href="{{ "categories/longform/" | relURL }}">{{ T "View all" }} →</a></p>
+        <p class="view-all"><a href="{{ (print "categories/" $customLongform | urlize) | relURL }}">{{ T "View all" }} →</a></p>
         {{ end }}
         </div>
     </div>
