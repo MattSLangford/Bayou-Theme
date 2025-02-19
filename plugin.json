@@ -11,16 +11,10 @@
 			"placeholder": "The default language for the site."
 		},
 		{
-			"field": "dateFormatLong",
-			"type": "text",
-			"label": "Long Date Format",
-			"placeholder": "The format for long-form dates. Example: 2 January 2006"
-		},
-		{
 			"field": "dateFormatShort",
 			"type": "text",
-			"label": "Short Date Format",
-			"placeholder": "The format for short-form dates. Example: 2 Jan 2006"
+			"label": "Date Format",
+			"placeholder": "The format for dates. Ex: 2 Jan 2006"
 		}
 	]
 }
