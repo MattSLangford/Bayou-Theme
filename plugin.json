@@ -8,6 +8,12 @@
 			"label": "Number of Microposts",
 			"type": "number",
 			"placeholder": "Enter the number of microposts to display"
+		},
+		{
+			"field": "params.longform_count",
+			"label": "Number of Longform Posts",
+			"type": "number",
+			"placeholder": "Enter the number of longform posts to display"
 		}
 	]
 }

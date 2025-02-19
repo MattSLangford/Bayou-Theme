@@ -31,8 +31,8 @@
         {{ partial "microhook-category-longform.html" . }}
         {{ else }}
         <ul>
-        {{ $paginator := .Paginate (where .Site.RegularPages.ByDate.Reverse "Params.categories" "intersect" (slice "Longform")) }}
-        {{ range $paginator.Pages }}
+        {{ $longformCount := .Site.Params.longform_count | default 10 }}
+        {{ range first $longformCount (where .Site.RegularPages.ByDate.Reverse "Params.categories" "intersect" (slice "Longform")) }}
         <li class="post-preview h-entry {{ range .Params.categories }} {{ . | urlize | lower }}{{ end }}">
             <span class="post-date-wrapper">
                 <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">
