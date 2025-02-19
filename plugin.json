@@ -4,13 +4,6 @@
 	"description": "Bayou Theme separates microposts from longform content using a unique design. Use of the theme requires following the setup process found at bayou.micro.blog. Follow @mtt on Micro.blog for support.",
 	"fields": [
 		{
-			"field": "paginateNumber",
-			"type": "integer",
-			"placeholder": 20,
-			"label": "Posts Per Page",
-			"placeholder": "The number of posts displayed per page."
-		},
-		{
 			"field": "defaultContentLanguage",
 			"type": "string",
 			"default": "en",
