@@ -1,5 +1,46 @@
 {
 	"version": "1.1.8",
 	"title": "Bayou Theme",
-	"description": "Bayou Theme separates microposts from longform content using a unique design. Use of the theme requires following the setup process found at bayou.micro.blog. Follow @mtt on Micro.blog for support."
+	"description": "Bayou Theme separates microposts from longform content using a unique design. Use of the theme requires following the setup process found at bayou.micro.blog. Follow @mtt on Micro.blog for support.",
+	"fields": [
+		{
+			"key": "paginate",
+			"type": "number",
+			"default": 20,
+			"name": "Posts Per Page",
+			"description": "The number of posts displayed per page."
+		},
+		{
+			"key": "defaultContentLanguage",
+			"type": "select",
+			"default": "en",
+			"name": "Default Language",
+			"description": "The default language for the site.",
+			"options": [
+				{ "value": "en", "name": "English" },
+				{ "value": "de", "name": "German" },
+				{ "value": "es", "name": "Spanish" },
+				{ "value": "fi", "name": "Finnish" },
+				{ "value": "fr", "name": "French" },
+				{ "value": "it", "name": "Italian" },
+				{ "value": "pt", "name": "Portuguese" },
+				{ "value": "ru", "name": "Russian" }
+			]
+		},
+		{
+			"key": "dateFormatLong",
+			"type": "text",
+			"default": "2 January 2006",
+			"name": "Long Date Format",
+			"description": "The format for long-form dates. Example: 2 January 2006"
+		},
+		{
+			"key": "dateFormatShort",
+			"type": "text",
+			"default": "2 Jan 2006",
+			"name": "Short Date Format",
+			"description": "The format for short-form dates. Example: 2 Jan 2006"
+		}
+	]
 }
+
