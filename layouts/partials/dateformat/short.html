@@ -1,1 +1,1 @@
-{{ time.Format (default "2 Jan 2006" .Site.Params.dateFormatShort) .Date }}
+{{ .Date.Format (.Site.Params.dateFormatShort | default "2 Jan 2006") }}
