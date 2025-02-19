@@ -37,7 +37,7 @@
 			"field": "params.dateFormatShort",
 			"label": "Date Format",
 			"type": "text",
-			"placeholder": "Enter the date format (e.g., 2 Jan 2006)"
+			"placeholder": "Enter the date format (default: 2 Jan 2006)"
 		}
 	]
 }
