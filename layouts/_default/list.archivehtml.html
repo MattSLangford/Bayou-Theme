@@ -2,7 +2,9 @@
 <div class="archive">
 	<h2 class="p-name post-title">{{ T "Archive" }}</h2>
 	<h3>Latest Update</h3>
-	{{ range first 1 (where .Site.RegularPages.ByDate.Reverse "Params.categories" "intersect" (slice "Microposts")) }}
+	{{ $micropostsCount := .Site.Params.microposts_count | default 1 }}
+	{{ $customMicroposts := .Site.Params.custom_microposts | default "Microposts" }}
+	{{ range first $micropostsCount (where .Site.RegularPages.ByDate.Reverse "Params.categories" "intersect" (slice $customMicroposts)) }}
 		<div class="post-preview h-entry micropost">
 			<div class="e-content">
 				{{ .Content }}
@@ -28,9 +30,8 @@
 	<div class="full-archives h-feed">
 		<h3>{{ T "Full post list" }}</h3>
 		<ul>
-		{{ $list := (where .Site.RegularPages.ByDate.Reverse "Params.categories" "intersect" (slice "Longform")) }}
-		{{ range $list }}
-
+		{{ $customLongform := .Site.Params.custom_longform | default "Longform" }}
+		{{ range where .Site.RegularPages.ByDate.Reverse "Params.categories" "intersect" (slice $customLongform) }}
 		<li class="post-preview h-entry {{ range .Params.categories }} {{ . | urlize | lower }}{{ end }}">
 			<span class="post-date-wrapper">
 				<time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">
