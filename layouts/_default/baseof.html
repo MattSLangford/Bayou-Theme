@@ -23,15 +23,16 @@
   <meta name="og:description" content="{{ .Summary | truncate 60 }}">
   <meta name="description" content="{{ .Summary }}">
   {{ end }}
-  {{ if and (.Params.photos) (gt (len .Params.photos) 0) }}
+  {{ if .Params.photos }}
     {{ with index .Params.photos 0 }}
       <meta name="twitter:image" content="{{ . }}">
       <meta property="og:image" content="{{ . }}">
     {{ end }}
-  {{ else }}
-    {{ with .Params.opengraph }}
-      <meta name="twitter:image" content="{{ .image }}">
-      <meta property="og:image" content="{{ .image }}">
+  {{ else if .Params.opengraph }}
+    {{ with .Params.opengraph.image }}
+      <meta property="og:image" content="{{ . }}">
+    {{ else if .Params.thumbnail }}
+      <meta property="og:image" content="{{ .Params.thumbnail }}">
     {{ end }}
   {{ end }}
   <title>{{ block "title" . }}{{ if .IsHome }}{{ .Site.Title }}{{ else if .Title }}{{ .Title }} | {{ .Site.Title }}{{ else }}{{ delimit (split .Summary " " | first 5) " " }} … | {{ .Site.Title }}{{ end }}{{ end }}</title>
