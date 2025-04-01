@@ -9,7 +9,8 @@ Bayou Theme is developed for use with the Micro.blog platform. It is designed to
 ### Credits
 Bayou Theme is created and maintained by [Matt Langford](http://micro.blog/mtt?remote_follow=1) (follow on Micro.blog).
 
-### Do You Value This Theme?
-Bayou Theme and its plugins are provided free of charge to Micro.blog users. I do not receive payment from Micro.blog in any way. If you'd like to help offset expenses and ensure the future of Tiny Theme and its plugins, please consider supporting its development.
+## Support Themes by Matt Langford
+Help fund ongoing work on Tiny, Sumo, and Bayou — clean, fast themes for Micro.blog. Your support keeps them updated and free for everyone. Plus, get access to custom ChatGPT powered support.
 
-<a href="https://www.buymeacoffee.com/mattlangford" rel="nofollow">Buy Me a Coffee</a>
+- <a href="https://donate.stripe.com/7sI28l5dCdvA0Mg6oq" class="donate-btn one-time">One-Time (Any Amount)</a>
+- <a href="https://donate.stripe.com/dR6aER8pO2QWdz29AD" class="donate-btn recurring">Monthly $5</a>
