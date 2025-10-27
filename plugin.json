@@ -1,7 +1,7 @@
 {
-	"version": "1.2.2",
+	"version": "1.2.3",
 	"title": "Bayou Theme",
-	"description": "Bayou Theme separates microposts from longform content using a unique design. Use of the theme requires following the setup process found at bayou.micro.blog. Follow @mtt on Micro.blog for updates.",
+	"description": "Bayou Theme separates microposts from longform content using a unique design. Use of the theme requires following the setup process found at bayou.micro.blog. Follow Matt on Mastodon: https://mastodon.social/@mtt",
 	"fields": [
 		{
 			"field": "defaultContentLanguage",
