@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="archive">
 	<h2 class="p-name post-title">{{ T "Archive" }}</h2>
-	<h3>Latest Update</h3>
+	<h3>{{ T "Latest Update" }}</h3>
 	{{ $micropostsCount := .Site.Params.microposts_count | default 1 }}
 	{{ $customMicroposts := .Site.Params.custom_microposts | default "Microposts" }}
 	{{ range first $micropostsCount (where .Site.RegularPages.ByDate.Reverse "Params.categories" "intersect" (slice $customMicroposts)) }}
